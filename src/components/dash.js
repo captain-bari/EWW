@@ -3,7 +3,8 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import Add from './add';
-import List from './list';
+import {firebase} from '../firebase'
+
 
 
 class NavbarPage extends Component {
@@ -14,6 +15,8 @@ state = {
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen });
 }
+
+
 
 render() {
   return (
@@ -46,10 +49,8 @@ render() {
                   <MDBIcon icon="user" />
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Sign Out</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem >Sign Out</MDBDropdownItem>
+                 
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
@@ -67,7 +68,7 @@ render() {
         </MDBCollapse>
       </MDBNavbar>
       <Add/>
-    <List/>
+   
     
     </Router>
     
