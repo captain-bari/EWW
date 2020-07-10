@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/EWW/static/css/main.5f361e03.chunk.css",
+    "main.js": "/EWW/static/js/main.13bf2b19.chunk.js",
+    "main.js.map": "/EWW/static/js/main.13bf2b19.chunk.js.map",
+    "runtime-main.js": "/EWW/static/js/runtime-main.1f47921f.js",
+    "runtime-main.js.map": "/EWW/static/js/runtime-main.1f47921f.js.map",
+    "static/css/2.3fd8e7aa.chunk.css": "/EWW/static/css/2.3fd8e7aa.chunk.css",
+    "static/js/2.61c0d2e8.chunk.js": "/EWW/static/js/2.61c0d2e8.chunk.js",
+    "static/js/2.61c0d2e8.chunk.js.map": "/EWW/static/js/2.61c0d2e8.chunk.js.map",
+    "index.html": "/EWW/index.html",
+    "precache-manifest.c6d4b7474f2e3847beeec19aa950ac41.js": "/EWW/precache-manifest.c6d4b7474f2e3847beeec19aa950ac41.js",
+    "service-worker.js": "/EWW/service-worker.js",
+    "static/css/2.3fd8e7aa.chunk.css.map": "/EWW/static/css/2.3fd8e7aa.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/EWW/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.61c0d2e8.chunk.js.LICENSE.txt": "/EWW/static/js/2.61c0d2e8.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/EWW/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/all.min.css": "/EWW/static/media/fa-solid-900.f3a7d3b5.woff",
+    "static/media/logo.svg": "/EWW/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f47921f.js",
+    "static/css/2.3fd8e7aa.chunk.css",
+    "static/js/2.61c0d2e8.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.13bf2b19.chunk.js"
+  ]
+}
