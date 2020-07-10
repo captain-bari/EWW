@@ -1,24 +1,37 @@
-import React from 'react';
+import React, {components, useEffect,useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Login from "./components/login"
+import Dash from "./components/dash"
+import {firebase} from './firebase'
+
+
+
 
 function App() {
+
+  const [user , updateuser] = useState(false);
+
+  useEffect(() => {
+      firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        updateuser(true);
+        
+      } else {
+        updateuser(false);
+      }
+    });
+
+
+  }, [])
+ 
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      { user ? (<Dash/>) : (<Login/>)}
+    
+      
     </div>
   );
 }
