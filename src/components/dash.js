@@ -6,22 +6,25 @@ import Routes from './routes';
 
 import {firebase} from '../firebase'
 import Add from "./add";
+import Welcome from "./welcome";
 
 
 
 class NavbarPage extends Component {
 state = {
-  isOpen: false
+  isOpen: false,
+  msg:true
 };
 
 toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
+  this.setState({ isOpen: !this.state.isOpen , msg:false});
 }
 
 
 
 render() {
   return (
+    <div>
     <Router>
       <MDBNavbar color="default-color" dark expand="md">
         <MDBNavbarBrand>
@@ -69,10 +72,13 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-     <Routes/>
+     
    
-    
+      <Routes/>
     </Router>
+    { this.state.msg ? (<Welcome/>) :null}
+    
+    </div>
     
     );
   }
