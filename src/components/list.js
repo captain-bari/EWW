@@ -54,11 +54,11 @@ const List = props => {
     
     /////////////////////
     <div>
-    <Card border="warning" bg="info" text="light">
-    <Card.Header><b>{object.Name}</b></Card.Header>
+    <Card border="success" bg="light" >
+    <Card.Header>{object.Name}</Card.Header>
     <Card.Body>
      
-      <Card.Text text="light">
+      <Card.Text >
         {object.Code}
       </Card.Text>
     </Card.Body>

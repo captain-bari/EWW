@@ -69,7 +69,7 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-     <Add/>
+     <Routes/>
    
     
     </Router>

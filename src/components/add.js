@@ -10,6 +10,7 @@ import List from './list';
 
 
 
+
 const Add= props => {
 
     const [pid , setpid] = useState(false);
@@ -50,7 +51,7 @@ const Add= props => {
             </Card.Body>
             
             </Card>
-           <List/>
+        
 
         </div>
     );
