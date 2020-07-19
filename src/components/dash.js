@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import Add from './add';
+import Routes from './routes';
+
 import {firebase} from '../firebase'
+import Add from "./add";
 
 
 
@@ -29,10 +31,10 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem active>
-              <MDBNavLink to="#!">Rules</MDBNavLink>
+              <MDBNavLink to="/add">Add Rules</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Features</MDBNavLink>
+              <MDBNavLink to="/show">Show Rules</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!">Pricing</MDBNavLink>
@@ -67,7 +69,7 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-      <Add/>
+     <Add/>
    
     
     </Router>

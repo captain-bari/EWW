@@ -1,69 +1,75 @@
-import React, { Fragment,useState} from "react";
+import React, { Fragment,useState,useEffect} from "react";
 import { MDBBtn,MDBCol, MDBFormInline, MDBIcon,MDBInput} from "mdbreact";
 import {firebase} from '../firebase'
 import { MDBContainer, MDBAlert } from 'mdbreact';
-
-
+import Card from 'react-bootstrap/Card'
 
 const List = props => {
    
 
     
+
+    const [user , updateuser] = useState([]);
+    var check= true;
+    
+    const n = [];
+    const array = [];
+    
     const db = firebase.firestore();
-        
+   
         db.settings({
         timestampsInSnapshots: true
                     });
         db.collection("Projects")
         .get()
         .then(querySnapshot => {
-        const data = querySnapshot.docs.map(doc => doc.data());;
-        console.log(data); 
-        
+        const data = querySnapshot.docs.map(doc => doc.data());
+               
         for(var i=0 ; i<data.length ; i++){
-        var node = document.createElement(`MDBContainer`); 
-        var alert = document.createElement("MDBAlert"); 
-        
-            alert.setAttribute("color", "dark");
-        var head = document.createElement("h4");
-           
-            head.setAttribute("className", "alert-heading");
-        var hr = document.createElement("br");
-        var line = document.createElement("hr");
-        var p = document.createElement("p");
-           
-            p.setAttribute("className", "mb-0");                         
-        var textnode = document.createTextNode(data[i].Name);
-             head.appendChild(textnode); 
-        var textnode2 = document.createTextNode(data[i].Code);  
-            p.appendChild(textnode2); 
-            
-        alert.appendChild(hr);alert.appendChild(hr);
-        alert.appendChild(head);
-        alert.appendChild(hr);
-        alert.appendChild(p);
-        alert.appendChild(hr);alert.appendChild(hr);
-        alert.appendChild(line);
-        node.appendChild(alert);
-
-       
-                            
-        document.getElementById("list").appendChild(node);
-        }
        
         
-        
-        
-        });
+       //user[i]=data[i].Name;
+       n.push(data[i]);
+      // console.log(n.length);
+    } //console.log(n);
+    if(check){updateuser(n);}
+    }
+    
+    );
        
        
-
+       console.log(user);
+       console.log(user.length);
+        if(user.length>1){check=false;}
+       
+      
     return (
     <div id="list">
 
        
 
         <br></br>
+        
+    {user.map((object, i) => 
+    
+    /////////////////////
+    <div>
+    <Card border="warning" bg="info" text="light">
+    <Card.Header><b>{object.Name}</b></Card.Header>
+    <Card.Body>
+     
+      <Card.Text text="light">
+        {object.Code}
+      </Card.Text>
+    </Card.Body>
+  </Card><br></br>
+  </div>
+  
+    //////////////
+    
+    )}
+   
+        
         
        
     </div>

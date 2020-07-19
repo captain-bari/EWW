@@ -50,7 +50,7 @@ const Add= props => {
             </Card.Body>
             
             </Card>
-            <List/>
+           <List/>
 
         </div>
     );
