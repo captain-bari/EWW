@@ -11,8 +11,10 @@ import {firebase} from './firebase'
 function App() {
 
   const [user , updateuser] = useState(false);
+  
 
   useEffect(() => {
+   // firebase.auth().signOut().then(() => {console.log('Signed Out');}).catch(e=>{console.error('Sign Out Error', e);});
       firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         updateuser(true);

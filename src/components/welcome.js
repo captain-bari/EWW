@@ -5,13 +5,11 @@ const Welcome= props => {
 return (
 <div>
 <Alert variant="success">
-  <Alert.Heading>Welcome HONEY !!!!!</Alert.Heading>
-  <p>
-   Use Navbar on Right to Add or See rules !
-  </p>
+  <Alert.Heading>Welcome Sugar</Alert.Heading>
+  
   <hr />
   <p className="mb-0">
-  Oh snap ! Its you again ? Send nudes
+ Send nudes (T=T)
   </p>
 </Alert>
     

@@ -74,10 +74,11 @@ render() {
       </MDBNavbar>
      
    
-      <Routes/>
+     
     </Router>
-    { this.state.msg ? (<Welcome/>) :null}
     
+    <Welcome/>
+    <Add/>
     </div>
     
     );

@@ -5,7 +5,7 @@ import {firebase} from '../firebase'
 const FormPage = () => {
 
   useEffect(() => {
-      //firebase.auth().signOut().then(() => {/*console.log('Signed Out');*/}).catch(e=>{console.error('Sign Out Error', e);});
+      //empty
   }, [])
 
   const authlogin = () => {
@@ -18,10 +18,10 @@ const FormPage = () => {
 
     const authsignup = () => {
 
-      var email = document.getElementById("loginemail").value;
-      var password = document.getElementById("loginpassword").value;
-      firebase.auth().createUserWithEmailAndPassword(email, password).then((u) => { firebase.auth().signInWithEmailAndPassword(email, password).then((u) => {/*console.log(u);*/}).catch((err) => {alert(err.message);});}).catch((err) => {alert(err.message);});
-
+      //var email = document.getElementById("loginemail").value;
+      //var password = document.getElementById("loginpassword").value;
+      //firebase.auth().createUserWithEmailAndPassword(email, password).then((u) => { firebase.auth().signInWithEmailAndPassword(email, password).then((u) => {/*console.log(u);*/}).catch((err) => {alert(err.message);});}).catch((err) => {alert(err.message);});
+      alert("Currently Not Accepting any applications NO POLY")
     }
     const authforgot = () => {
 

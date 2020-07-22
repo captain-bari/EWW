@@ -52,7 +52,7 @@ const Add= props => {
             
             </Card>
         
-
+        <List/>
         </div>
     );
 }
