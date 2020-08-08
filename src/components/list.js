@@ -4,6 +4,7 @@ import {firebase} from '../firebase'
 import { MDBContainer, MDBAlert } from 'mdbreact';
 import Card from 'react-bootstrap/Card'
 
+
 const List = props => {
    
 
@@ -13,8 +14,7 @@ const List = props => {
     var check= true;
     
     const n = [];
-    const array = [];
-    
+
     const db = firebase.firestore();
    
         db.settings({
@@ -28,10 +28,10 @@ const List = props => {
         for(var i=0 ; i<data.length ; i++){
        
         
-       //user[i]=data[i].Name;
+       
        n.push(data[i]);
-      // console.log(n.length);
-    } //console.log(n);
+     
+    }
     if(check){updateuser(n);}
     }
     

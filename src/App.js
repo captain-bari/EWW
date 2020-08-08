@@ -18,7 +18,25 @@ function App() {
       firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         updateuser(true);
-        
+        console.log(user.email);
+        var currentdate = new Date(); 
+        var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+                console.log(datetime);
+                const db = firebase.firestore();
+                db.settings({
+                timestampsInSnapshots: true
+                            });
+                db.collection(user.email)
+                .add({
+                   Date : datetime
+                }).then(doc => {alert("Rule added")}).catch((err) => {alert(err.message);});
+            
+      
       } else {
         updateuser(false);
       }
