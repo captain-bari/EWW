@@ -3,24 +3,22 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './routes';
-
 import {firebase} from '../firebase'
 import Add from "./add";
 import Welcome from "./welcome";
-
-
+import Count from "./count";
 
 class NavbarPage extends Component {
 state = {
   isOpen: false,
-  msg:true
+  msg:true,
+  countpage:false,
+  rulepage:true,
 };
 
 toggleCollapse = () => {
   this.setState({ isOpen: !this.state.isOpen , msg:false});
 }
-
-
 
 render() {
   return (
@@ -33,11 +31,11 @@ render() {
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
-            <MDBNavItem active>
-              <MDBNavLink to="/EWW">Add Rules</MDBNavLink>
+            <MDBNavItem active={this.state.rulepage}>
+              <MDBNavLink to="/EWW">Rules</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/EWW">Show Rules</MDBNavLink>
+            <MDBNavItem active={this.state.countpage}>
+              <MDBNavLink to="/EWW" onClick={() => this.setState({ countpage:true,rulepage:false})}>Count</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="/EWW">Pricing</MDBNavLink>
@@ -76,9 +74,8 @@ render() {
    
      
     </Router>
-    
-    <Welcome/>
-    <Add/>
+    {this.state.rulepage && <div><Welcome/><Add/></div>}
+    {this.state.countpage && <div><Count/></div>}
     </div>
     
     );
