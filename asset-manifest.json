@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/EWW/static/css/main.5f361e03.chunk.css",
-    "main.js": "/EWW/static/js/main.3624b00e.chunk.js",
-    "main.js.map": "/EWW/static/js/main.3624b00e.chunk.js.map",
+    "main.css": "/EWW/static/css/main.d1b05096.chunk.css",
+    "main.js": "/EWW/static/js/main.467e4ecd.chunk.js",
+    "main.js.map": "/EWW/static/js/main.467e4ecd.chunk.js.map",
     "runtime-main.js": "/EWW/static/js/runtime-main.1f47921f.js",
     "runtime-main.js.map": "/EWW/static/js/runtime-main.1f47921f.js.map",
-    "static/css/2.3fd8e7aa.chunk.css": "/EWW/static/css/2.3fd8e7aa.chunk.css",
-    "static/js/2.f4db545d.chunk.js": "/EWW/static/js/2.f4db545d.chunk.js",
-    "static/js/2.f4db545d.chunk.js.map": "/EWW/static/js/2.f4db545d.chunk.js.map",
+    "static/css/2.dd6a8896.chunk.css": "/EWW/static/css/2.dd6a8896.chunk.css",
+    "static/js/2.b7d656bf.chunk.js": "/EWW/static/js/2.b7d656bf.chunk.js",
+    "static/js/2.b7d656bf.chunk.js.map": "/EWW/static/js/2.b7d656bf.chunk.js.map",
     "index.html": "/EWW/index.html",
-    "precache-manifest.c68dfde058ecea7cc401a89fa3a3c59e.js": "/EWW/precache-manifest.c68dfde058ecea7cc401a89fa3a3c59e.js",
+    "precache-manifest.8e5d1df8ed41935427bffbf2e21250a3.js": "/EWW/precache-manifest.8e5d1df8ed41935427bffbf2e21250a3.js",
     "service-worker.js": "/EWW/service-worker.js",
-    "static/css/2.3fd8e7aa.chunk.css.map": "/EWW/static/css/2.3fd8e7aa.chunk.css.map",
-    "static/css/main.5f361e03.chunk.css.map": "/EWW/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.f4db545d.chunk.js.LICENSE.txt": "/EWW/static/js/2.f4db545d.chunk.js.LICENSE.txt",
+    "static/css/2.dd6a8896.chunk.css.map": "/EWW/static/css/2.dd6a8896.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/EWW/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.b7d656bf.chunk.js.LICENSE.txt": "/EWW/static/js/2.b7d656bf.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/EWW/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/EWW/static/media/fa-solid-900.f3a7d3b5.woff",
-    "static/media/logo.svg": "/EWW/static/media/logo.5d5d9eef.svg"
+    "static/media/golgappe.png": "/EWW/static/media/golgappe.951255e7.png",
+    "static/media/kulcha.png": "/EWW/static/media/kulcha.abe71eab.png",
+    "static/media/logo.svg": "/EWW/static/media/logo.5d5d9eef.svg",
+    "static/media/patty.png": "/EWW/static/media/patty.1c92bf39.png",
+    "static/media/pizza.png": "/EWW/static/media/pizza.30f58bf2.png",
+    "static/media/sex.png": "/EWW/static/media/sex.0edd6228.png",
+    "static/media/sting.png": "/EWW/static/media/sting.73e84093.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1f47921f.js",
-    "static/css/2.3fd8e7aa.chunk.css",
-    "static/js/2.f4db545d.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.3624b00e.chunk.js"
+    "static/css/2.dd6a8896.chunk.css",
+    "static/js/2.b7d656bf.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.467e4ecd.chunk.js"
   ]
 }
