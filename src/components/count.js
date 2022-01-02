@@ -120,6 +120,7 @@ const Count = props => {
     );       
     return (
     <div id="count"  style={{ textAlign:'center',alignItems:'center',display:'inline-block'}}>
+        <br></br>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require("./pizza.png")} />
             <Card.Body>
@@ -129,7 +130,7 @@ const Count = props => {
             </Card.Text>
                 <Button variant="primary" onClick={addPizza}>Increase Count</Button>
             </Card.Body>
-        </Card>
+        </Card><br></br>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require("./kulcha.png")} />
             <Card.Body>
@@ -139,8 +140,8 @@ const Count = props => {
             </Card.Text>
                 <Button variant="primary" onClick={addKulcha}>Increase Count</Button>
             </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem' }}>
+        </Card><br></br>
+        <Card style={{ width: '18rem' }} >
             <Card.Img variant="top" src={require("./patty.png")} />
             <Card.Body>
             <Card.Title>Patty : {patty}</Card.Title>
@@ -149,7 +150,7 @@ const Count = props => {
             </Card.Text>
                 <Button variant="primary" onClick={addpatty}>Increase Count</Button>
             </Card.Body>
-        </Card>
+        </Card><br></br>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require("./sex.png")} />
             <Card.Body>
@@ -159,7 +160,7 @@ const Count = props => {
             </Card.Text>
                 <Button variant="primary" onClick={addSex}>Increase Count</Button>
             </Card.Body>
-        </Card>
+        </Card><br></br>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require("./sting.png")} />
             <Card.Body>
@@ -169,7 +170,7 @@ const Count = props => {
             </Card.Text>
                 <Button variant="primary" onClick={addSting}>Increase Count</Button>
             </Card.Body>
-        </Card>
+        </Card><br></br>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={require("./golgappe.png")} />
             <Card.Body>
@@ -179,7 +180,7 @@ const Count = props => {
             </Card.Text>
                 <Button variant="primary" onClick={addGolGappe}>Increase Count</Button>
             </Card.Body>
-        </Card>
+        </Card><br></br>
      </div>
     );
 }
