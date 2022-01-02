@@ -1,15 +1,10 @@
 import React ,{ Fragment,useState} from 'react';
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
 import {firebase} from '../firebase'
 import { MDBBadge, MDBContainer } from "mdbreact";
 import { MDBBtn } from "mdbreact";
 import { MDBInputGroup } from "mdbreact";
 import List from './list';
-
-
-
-
 
 const Add= props => {
 
