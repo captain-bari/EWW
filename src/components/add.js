@@ -11,8 +11,11 @@ const Add= props => {
     const [pid , setpid] = useState(false);
     const add = () => {
         var pname = document.getElementById("pname").value;
-       
         var code = document.getElementById("code").value;
+        if (pname === "" || code === "") {
+            alert("Fill both Title and rule")
+            return
+        }
         const db = firebase.firestore();
         db.settings({
         timestampsInSnapshots: true

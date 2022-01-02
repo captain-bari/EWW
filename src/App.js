@@ -34,7 +34,7 @@ function App() {
                 db.collection(user.email)
                 .add({
                    Date : datetime
-                }).then(doc => {alert("Rule added")}).catch((err) => {alert(err.message);});
+                }).then(doc => {console.log(doc)}).catch((err) => {alert(err.message);});
             
       
       } else {

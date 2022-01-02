@@ -32,13 +32,13 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem active={this.state.rulepage}>
-              <MDBNavLink to="/EWW">Rules</MDBNavLink>
+              <MDBNavLink to="/EWW" onClick={() => {this.setState({ countpage:false,rulepage:true}); this.toggleCollapse()}}>Rules</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem active={this.state.countpage}>
-              <MDBNavLink to="/EWW" onClick={() => this.setState({ countpage:true,rulepage:false})}>Count</MDBNavLink>
+              <MDBNavLink to="/EWW" onClick={() => {this.setState({ countpage:true,rulepage:false}); this.toggleCollapse()}}>Count</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/EWW">Pricing</MDBNavLink>
+              <MDBNavLink to="/EWW" onClick={() => alert("TO-DO not implimented yet")}>Current Address</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               
